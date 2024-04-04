@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+button{
+    overflow: hidden;
+}
+
+button::before{
+    transition: all ease 0.5s;
+    position: absolute;
+    content: "";
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    left:-10%;
+    top:100%;
+    z-index: 2;
+    background-color: teal;
+
+}
+button:hover::before{
+    top:-100%;
+
+}
+button:hover h1{
+    color: white;
+    transition: all ease 0.2s;
+}
+#main{
+    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+}
+.inputcon{
+ background-color: rgba(255, 253, 253, 0.575);
+}
+input::-webkit-calender-picker-indicator{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    position: absolute;
+    background-position: calc(100%-10px);
+    background-size: 30px;
+    cursor: pointer;
+    height: auto;
+}
+
+.year,.month,.day{
+ background-color: rgba(255, 253, 253, 0.575);
+
+}

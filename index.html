@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main" class="overflow-hidden h-screen w-full  flex items-center flex-col gap-10 justify-center relative">
+        
+        <div class="info absolute top-10 left-10 flex items-center gap-56">
+            <h1 class="text-3xl font-bold text-zinc-800">Tech Alpha Task-1</h1>
+            <h1 class="text-7xl font-bold text-zinc-800">Age Calculator</h1>
+        </div>
+        <div class="inputcon  w-fit py-8 px-8 rounded-sm flex items-center gap-6">
+            
+            <input   type="date" class="cursor-pointer inputUser px-4 border-none py-2 rounded-md text-xl w-72">
+            <button class="relative px-4 py-2 rounded-md bg-white text-xl capitalize">
+                <h1 onclick="calculateAge()" class="relative z-[4]">Calculate</h1>
+            </button>
+        </div>
+        <div class="outputCon w-[500px]   rounded-sm flex items-center justify-between">
+            <div class="year rounded-lg pt-2 h-24 w-[20%] gap-1  flex flex-col items-center justify-center">
+                <h1 class="text-4xl resultYear  ">00</h1>
+                <h4 class="text-sm mt-2 text-zinc-700">Years</h4>
+            </div>
+            <div class="month rounded-lg pt-2 h-24 w-[20%]  flex flex-col items-center justify-center">
+                <h1 class="text-4xl resultMonth  ">00</h1>
+                <h4 class="text-sm mt-2 text-zinc-700">Months</h4>
+            </div>
+            <div class="day rounded-lg pt-2 h-24 w-[20%]  flex flex-col items-center justify-center">
+                <h1 class="text-4xl resultDay   ">00</h1>
+                <h4 class="text-sm mt-2 text-zinc-700">Days</h4>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
